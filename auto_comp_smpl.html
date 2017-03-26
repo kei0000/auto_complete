@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
+
+<script type="text/javascript"src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="auto_comp_smpl.js"></script>
+
+<style type="text/css">
+<!--
+/* to change CSS of suggest list */
+/* http://jquery.nj-clucker.com/applied/jquery_ui_autocomplete_css/ */
+/* http://log.miraoto.com/2013/03/753/ */
+.ui-autocomplete a  {
+  font-size: 9pt;
+}
+</style>
+
+</head>
+<body>
+auto complete
+<span id="sp_ac1"><p><input type="text" id="ac1"></p></span>
+<span id="sp_ac2"><p><input type="text" id="ac2"></p></span>
+<span id="sp_ac3" style="visibility:hidden" ><p><input type="text" id="tags" name="search" autocomplete="off"></p></span>
+<div id="result">
+</div>
+
+<span id="link_to_show"><a href = "#">click to show the third textbox</a></span>
+<pre>
+see:
+http://jquery.keicode.com/ui/autocomplete.php
+</pre>
+
+<script>
+$(function() {
+  $('#link_to_show').click(function() {
+    $('#sp_ac3').css('visibility', 'visible');
+  });
+});
+
+</script>
+
+</body>
+</html>
